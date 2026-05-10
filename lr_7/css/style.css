@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px auto 0;
+    color: orange;
+}
+
+.wrap {
+    width: 75%;
+    min-height: 600px;
+    position: relative;
+    margin: 70px auto 0;
+    border: 2px solid #555;
+    background-color: white;
+}
+
+.wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+div.card {
+    width: 25%;
+    position: relative;
+    float: left;
+    margin: 0 auto;
+    min-height: 600px;
+}
+
+div.card:not(:nth-child(5)) {
+    border-right: 2px solid #555;
+}
+
+.category {
+    width: 100%;
+    height: auto;
+}
+
+.category a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: orange;
+    font-size: 24px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+hr {
+    width: 85%;
+    margin: 20px auto 0;
+    border-color: #444;
+}
+
+.swipe {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    color: orange;
+    text-align: center;
+    line-height: 40px;
+    top: 65px;
+    background-color: white;
+}
+
+.swipe:hover {
+    background-color: orange;
+    cursor: pointer;
+    color: black;
+}
+
+.swipe_left {
+    left: -20px;
+}
+
+.swipe_right {
+    right: -20px;
+}
+
+.image {
+    width: 70%;
+    height: 250px;
+    margin: 30px auto 0;
+}
+
+.name {
+    width: 100%;
+}
+
+.name a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.price {
+    min-height: 40px;
+    width: 100%;
+    text-align: center;
+    color: orange;
+    font-size: 18px;
+    margin: 30px auto 0;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    background-color: darkred;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.soon {
+    background-color: rgb(27, 26, 72);
+}
+
+.btn:hover:not(.soon) {
+    background-color: red;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: black;
+    color: white;
+}
+
+.bage {
+    position: absolute;
+    min-width: 90px;
+    min-height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    line-height: 90px;
+    top: -45px;
+    right: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.bage_pistol {
+    background-color: green;
+}
+
+.bage_sniper,
+.bage_shotgun {
+    background-color: crimson;
+}
