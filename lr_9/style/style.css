@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    font-size: 14px;
+}
+
+#topbar {
+    width: 100%;
+    min-height: 60px;
+    text-align: center;
+}
+
+#topbar .container {
+    width: 100%;
+    min-height: 60px;
+    position: relative;
+}
+
+.fa-bars {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+}
+
+#topbar div.container>a {
+    color: rgb(69, 191, 228);
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+
+header>.container {
+    width: 100%;
+    min-height: 500px;
+    background-image: url(../img/jumbotron.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    color: white;
+}
+
+.btn {
+    min-width: 200px;
+    display: inline-block;
+    background-color: rgb(224, 13, 101);
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    border-radius: 100px;
+    margin-top: 50px;
+}
+
+.btn:hover {
+    background-color: rgb(94, 12, 46);
+}
+
+header>.container .child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#services {
+    text-align: center;
+    width: 100%;
+    min-height: 300px;
+    padding: 30px 0 15px;
+}
+
+.service {
+    width: calc(33.333% - 20px);
+    min-height: 100px;
+    display: inline-block;
+    color: grey;
+}
+
+i {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.service:not(:last-child) {
+    margin-right: 20px;
+}
+
+#blog {
+    width: 100%;
+    min-height: 300px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.blog {
+    width: 75%;
+    min-height: 100px;
+    margin: 0 auto;
+    color: grey;
+}
+
+.img {
+    width: 30%;
+    height: auto;
+    display: inline-block;
+}
+
+.article {
+    width: calc(70% - 10px);
+    height: auto;
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: top;
+    text-align: left;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog:not(:first-child) {
+    margin-top: 20px;
+}
+
+h3 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.blog p {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about_us {
+    width: 75%;
+    min-height: 150px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0 50px;
+}
+
+#about_us p {
+    color: grey;
+    text-align: left;
+}
+
+footer {
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    background-color: #313030;
+    color: white;
+    position: relative;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+}
+
+footer div.container>a {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer_menu {
+    display: flex;
+    gap: 10px;
+}
+
+.footer_menu li {
+    list-style: none;
+}
+
+.footer_menu li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+footer .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 30%;
+        transform: translateY(-30%);
+    }
+
+    #about_us {
+        width: 35%;
+    }
+
+    .service {
+        width: 15%;
+    }
+
+    .menu ul li {
+        display: inline-block;
+    }
+
+    .menu ul li a {
+        color: grey;
+    }
+
+    .menu ul li:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .fa-bars {
+        display: none !important;
+    }
+
+    #topbar div.container>a {
+        font-size: 24px;
+    }
+
+    footer div.container>a {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #services {
+        padding: 45px 0 25px;
+    }
+
+    #blog {
+        padding: 45px 0;
+    }
+
+    #about_us {
+        padding: 35px 0 70px;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #services {
+        padding: 60px 0 35px;
+    }
+
+    #blog {
+        padding: 60px 0;
+    }
+
+    #about_us {
+        padding: 45px 0 90px;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+    }
+}
